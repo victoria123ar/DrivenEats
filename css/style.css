@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  max-width: 615px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+header {
+  background-color: #cf2b2b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 92px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Righteous";
+  font-size: 44px;
+  font-weight: 300;
+  color: #ffff;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffff;
+}
+
+main {
+  margin-top: 130px;
+  margin-left: 20px;
+}
+
+.principal > h1 {
+  font-family: "Righteous";
+  font-size: 26px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.pratos {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.prato {
+  background-color: #ffff;
+  margin-right: 20px;
+  width: 172px;
+  height: 216px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.prato > h1 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.prato > span {
+  font-size: 15px;
+  font-weight: 200;
+  color: #a6a6a6;
+}
+
+.prato > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  padding-top: 10px;
+}
+
+img {
+  width: 144px;
+  height: 87px;
+  border-radius: 5px;
+}
+
+.drink > h1 {
+  font-family: "Righteous";
+  font-size: 26px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.bebidas {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.bebida {
+  background-color: #ffff;
+  margin-right: 20px;
+  width: 172px;
+  height: 216px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.bebida > h1 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bebida > span {
+  font-size: 15px;
+  font-weight: 200;
+  color: #a6a6a6;
+}
+
+.bebida > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  padding-top: 10px;
+}
+
+.desert > h1 {
+  font-family: "Righteous";
+  font-size: 26px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.sobremesas {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 100px;
+}
+
+.sobremesa {
+  background-color: #ffff;
+  margin-right: 20px;
+  width: 172px;
+  height: 216px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.sobremesa > h1 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sobremesa > span {
+  font-size: 15px;
+  font-weight: 200;
+  color: #a6a6a6;
+}
+
+.sobremesa > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #ffff;
+  width: 100%;
+  height: 92px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #cbcbcb;
+  border: none;
+  border-radius: 50px;
+  width: 364px;
+  height: 61px;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
