@@ -15,132 +15,134 @@
     <title>Driven Eats</title>
   </head>
   <body>
-    <header>
-      <h1>DrivenEats</h1>
-      <p>Sua comida em 6 minutos</p>
-    </header>
-    <main>
-      <div class="principal">
-        <h1>Primeiro, seu prato</h1>
-        <div class="pratos">
-          <div class="prato" onclick="selecionarPrato(this)">
-            <img src="./assets/pizza.jpg" alt="Pizza" />
-            <h1>Pizza de peperonni</h1>
-            <span>Pizza de peperoni com muito queijo</span>
-            <div class="visto">
-              R$ 54,90 <img class="icone" src="./assets/Vector.png" alt="" />
+    <div class="tela">
+      <header>
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+      </header>
+      <main>
+        <div class="principal">
+          <h1>Primeiro, seu prato</h1>
+          <div class="pratos">
+            <div class="prato" onclick="selecionarPrato(this)">
+              <img src="./assets/pizza.jpg" alt="Pizza" />
+              <h1>Pizza de peperonni</h1>
+              <span>Pizza de peperoni com muito queijo</span>
+              <div class="visto">
+                R$ 54,90 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="prato" onclick="selecionarPrato(this)">
-            <img src="./assets/hamburguer.jpg" alt="Hamburguer" />
-            <h1>Hamburguer</h1>
-            <span>Com crispy de cebola e molho especial da casa</span>
-            <div class="visto">
-              R$ 29,99 <img class="icone" src="./assets/Vector.png" alt="" />
+            <div class="prato" onclick="selecionarPrato(this)">
+              <img src="./assets/hamburguer.jpg" alt="Hamburguer" />
+              <h1>Hamburguer</h1>
+              <span>Com crispy de cebola e molho especial da casa</span>
+              <div class="visto">
+                R$ 29,99 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="prato" onclick="selecionarPrato(this)">
-            <img src="./assets/macarrão.png" alt="Macarrão" />
-            <h1>Macarrão</h1>
-            <span>Macarrão ao molho de tomate</span>
-            <div class="visto">
-              R$ 13,90 <img class="icone" src="./assets/Vector.png" alt="" />
+            <div class="prato" onclick="selecionarPrato(this)">
+              <img src="./assets/macarrão.png" alt="Macarrão" />
+              <h1>Macarrão</h1>
+              <span>Macarrão ao molho de tomate</span>
+              <div class="visto">
+                R$ 13,90 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="prato" onclick="selecionarPrato(this)">
-            <img src="./assets/sopa.jpg" alt="Sopa" />
-            <h1>Sopa</h1>
-            <span>Deliciosa sopa</span>
-            <div class="visto">
-              R$ 18,00 <img class="icone" src="./assets/Vector.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="drink">
-        <h1>Agora, sua bebida</h1>
-        <div class="bebidas">
-          <div class="bebida" onclick="selecionarBebida(this)">
-            <img src="./assets/suco de abacaxi.jpg" alt="Suco de abacaxi" />
-            <h1>Suco de abacaxi</h1>
-            <span>Suco 500ml</span>
-            <div class="visto">
-              R$ 10,00 <img class="icone" src="./assets/Vector.png" alt="" />
-            </div>
-          </div>
-          <div class="bebida" onclick="selecionarBebida(this)">
-            <img src="./assets/suco de laranja.jpg" alt="Suco de laranja" />
-            <h1>Suco de laranja</h1>
-            <span>Suco 500ml</span>
-            <div class="visto">
-              R$ 12,00 <img class="icone" src="./assets/Vector.png" alt="" />
-            </div>
-          </div>
-          <div class="bebida" onclick="selecionarBebida(this)">
-            <img
-              src="./assets/refrigerante lata.jfif"
-              alt="Refrigerante lata"
-            />
-            <h1>Coca cola lata</h1>
-            <span>Lata 350ml</span>
-            <div class="visto">
-              R$ 5,50 <img class="icone" src="./assets/Vector.png" alt="" />
-            </div>
-          </div>
-          <div class="bebida" onclick="selecionarBebida(this)">
-            <img
-              src="./assets/refrigerante litro.jpg"
-              alt="Refrigerante litro"
-            />
-            <h1>Coca cola litro</h1>
-            <span>Garrafa 1l</span>
-            <div class="visto">
-              R$ 8,00 <img class="icone" src="./assets/Vector.png" alt="" />
+            <div class="prato" onclick="selecionarPrato(this)">
+              <img src="./assets/sopa.jpg" alt="Sopa" />
+              <h1>Sopa</h1>
+              <span>Deliciosa sopa</span>
+              <div class="visto">
+                R$ 18,00 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="desert">
-        <h1>Por fim, sua sobremesa</h1>
-        <div class="sobremesas">
-          <div class="sobremesa" onclick="selecionarSobremesa(this)">
-            <img src="./assets/brownie.jpeg" alt="Brownie" />
-            <h1>Brownie</h1>
-            <span>Delicioso brownie</span>
-            <div class="visto">
-              R$ 7,90 <img class="icone" src="./assets/Vector.png" alt="" />
+        <div class="drink">
+          <h1>Agora, sua bebida</h1>
+          <div class="bebidas">
+            <div class="bebida" onclick="selecionarBebida(this)">
+              <img src="./assets/suco de abacaxi.jpg" alt="Suco de abacaxi" />
+              <h1>Suco de abacaxi</h1>
+              <span>Suco 500ml</span>
+              <div class="visto">
+                R$ 10,00 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="sobremesa" onclick="selecionarSobremesa(this)">
-            <img src="./assets/torta.jpg" alt="Torta" />
-            <h1>Fatia de torta</h1>
-            <span>Torta de ninho com morangos</span>
-            <div class="visto">
-              R$ 21,50 <img class="icone" src="./assets/Vector.png" alt="" />
+            <div class="bebida" onclick="selecionarBebida(this)">
+              <img src="./assets/suco de laranja.jpg" alt="Suco de laranja" />
+              <h1>Suco de laranja</h1>
+              <span>Suco 500ml</span>
+              <div class="visto">
+                R$ 12,00 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="sobremesa" onclick="selecionarSobremesa(this)">
-            <img src="./assets/sorvete.jpg" alt="Sorvete" />
-            <h1>Sorvete</h1>
-            <span>500ml de sorvete de chocolate</span>
-            <div class="visto">
-              R$ 18,00 <img class="icone" src="./assets/Vector.png" alt="" />
+            <div class="bebida" onclick="selecionarBebida(this)">
+              <img
+                src="./assets/refrigerante lata.jfif"
+                alt="Refrigerante lata"
+              />
+              <h1>Coca cola lata</h1>
+              <span>Lata 350ml</span>
+              <div class="visto">
+                R$ 5,50 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="sobremesa" onclick="selecionarSobremesa(this)">
-            <img src="./assets/pudim.jfif" alt="Pudim" />
-            <h1>Pudim</h1>
-            <span>Pudim de leite</span>
-            <div class="visto">
-              R$ 6,90 <img class="icone" src="./assets/Vector.png" alt="" />
+            <div class="bebida" onclick="selecionarBebida(this)">
+              <img
+                src="./assets/refrigerante litro.jpg"
+                alt="Refrigerante litro"
+              />
+              <h1>Coca cola litro</h1>
+              <span>Garrafa 1l</span>
+              <div class="visto">
+                R$ 8,00 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+        <div class="desert">
+          <h1>Por fim, sua sobremesa</h1>
+          <div class="sobremesas">
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+              <img src="./assets/brownie.jpeg" alt="Brownie" />
+              <h1>Brownie</h1>
+              <span>Delicioso brownie</span>
+              <div class="visto">
+                R$ 7,90 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+              <img src="./assets/torta.jpg" alt="Torta" />
+              <h1>Fatia de torta</h1>
+              <span>Torta de ninho com morangos</span>
+              <div class="visto">
+                R$ 21,50 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+              <img src="./assets/sorvete.jpg" alt="Sorvete" />
+              <h1>Sorvete</h1>
+              <span>500ml de sorvete de chocolate</span>
+              <div class="visto">
+                R$ 18,00 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+              <img src="./assets/pudim.jfif" alt="Pudim" />
+              <h1>Pudim</h1>
+              <span>Pudim de leite</span>
+              <div class="visto">
+                R$ 6,90 <img class="icone" src="./assets/Vector.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <div class="container escondido"></div>
     <footer>
-      <button class="botao" onclick="fecharPedido()">
+      <button disabled class="botao" onclick="fecharPedido()">
         Selecione os 3 itens para fechar o pedido
       </button>
     </footer>

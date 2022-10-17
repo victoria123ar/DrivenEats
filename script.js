@@ -23,7 +23,6 @@ let total;
 
 function selecionarPrato(prato) {
   if (pratoSelecionado !== null) {
-    console.log(pratoSelecionado);
     pratoSelecionado.classList.remove("escolhido");
   }
 
@@ -34,7 +33,6 @@ function selecionarPrato(prato) {
 
 function selecionarBebida(bebida) {
   if (bebidaSelecionada !== null) {
-    console.log(bebidaSelecionada);
     bebidaSelecionada.classList.remove("escolhido");
   }
 
@@ -45,7 +43,6 @@ function selecionarBebida(bebida) {
 
 function selecionarSobremesa(sobremesa) {
   if (sobremesaSelecionada != null) {
-    console.log(sobremesaSelecionada);
     sobremesaSelecionada.classList.remove("escolhido");
   }
 
@@ -62,7 +59,6 @@ function habilitarBotao() {
     bebidaSelecionada != null &&
     sobremesaSelecionada != null
   ) {
-    console.log("entrei2");
     botao.innerHTML = `Finalizar pedido`;
     botao.classList.add("ativado");
     botao.disabled = false;
@@ -72,21 +68,15 @@ function habilitarBotao() {
 }
 
 function fecharPedido() {
-  console.log("entrei no pedido");
   nome = prompt("Qual o seu nome?");
   endereço = prompt("Qual o endereço completo para entrega?");
   let pedido = document.querySelector(".container");
-  let menu = document.querySelector("main");
-  let topo = document.querySelector("header");
+  let tela = document.querySelector(".tela");
   let botao = document.querySelector("footer");
 
   pedido.classList.remove("escondido");
   botao.classList.add("escondido");
-  menu.classList.add("desfoco");
-  topo.classList.add("desfoco");
-  pratos.disabled = true;
-  bebidas.disabled = true;
-  sobremesas.disabled = true;
+  tela.classList.add("desfoco");
 
   pratoSelecionadoTexto = document.querySelector(
     ".pratos .escolhido h1"
@@ -107,7 +97,6 @@ function fecharPedido() {
     ".sobremesas .escolhido .visto"
   ).textContent;
 
-  console.log(total);
   somar();
   item = `<div class="pedido">
     <h1>Confirme seu pedido</h1>
@@ -122,9 +111,6 @@ function fecharPedido() {
     </div>`;
 
   pedido.innerHTML += item;
-  console.log("fecharPedido" + pratoSelecionadoTexto);
-  console.log("fecharPedido" + bebidaSelecionadaTexto);
-  console.log("fecharPedido" + sobremesaSelecionadaTexto);
 }
 
 function somar() {
@@ -141,7 +127,6 @@ function somar() {
     Number(sobremesaSelecionada2);
   let soma2 = soma.toFixed(2);
   total = soma2.replace(".", ",");
-  console.log(total);
 }
 
 function enviarPedido() {
@@ -169,14 +154,12 @@ function enviarPedido() {
 
 function cancelar() {
   let pedido = document.querySelector(".container");
-  let menu = document.querySelector("main");
-  let topo = document.querySelector("header");
+  let tela = document.querySelector(".tela");
   let botao = document.querySelector("footer");
 
   pedido.classList.add("escondido");
   botao.classList.remove("escondido");
-  menu.classList.remove("desfoco");
-  topo.classList.remove("desfoco");
+  tela.classList.remove("desfoco");
   pedido.innerHTML = "";
   pratos.disabled = false;
   bebidas.disabled = false;
